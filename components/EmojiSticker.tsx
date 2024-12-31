@@ -51,14 +51,6 @@ export default function EmojiSticker({
   const drag = Gesture.Pan().onChange((event) => {
     translateX.value += event.changeX;
     translateY.value += event.changeY;
-    // console.log(
-    //   "🚀 ~ drag ~ translateX.value:",
-    //   translateX.value
-    // );
-    // console.log(
-    //   "🚀 ~ drag ~ translateY.value:",
-    //   translateY.value
-    // );
   });
 
   // Applichiamo la posizione aggiornata dell'immagine usando l'hook useAnimatedStyle()
